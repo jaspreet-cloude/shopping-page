@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f5f2eb">
+  <meta name="theme-color" content="#f4eee8">
   <meta name="description" content="Discover considered tailoring and made-to-measure suiting at The Gentry Room. Crafted with intention in New York.">
   <title>The Gentry Room — Made to Measure</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --paper: #f5f2eb;
+      --paper: #f4eee8;
       --ink: #252521;
       --muted: #74736b;
       --olive: #555b42;
       --line: #d9d5ca;
       --serif: "Playfair Display", Georgia, serif;
       --sans: "DM Sans", Arial, sans-serif;
+      --signature: "Allura", cursive;
     }
 
     * { box-sizing: border-box; }
@@ -197,6 +198,11 @@
     .service-image-one { background-image: url("https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=80"); }
     .service-image-two { background-image: url("https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=80"); }
     .service-image-three { background-image: url("https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=900&q=80"); }
+    .women-collection { margin-top: 88px; padding-top: 74px; border-top: 1px solid var(--line); }
+    .women-collection .section-heading { margin-bottom: 38px; }
+    .service-image-women-one { background-image: url("https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=900&q=80"); }
+    .service-image-women-two { background-image: url("https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=900&q=80"); }
+    .service-image-women-three { background-image: url("https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=900&q=80"); }
     .service-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
     .service-meta h3 { margin-bottom: 8px; font-family: var(--serif); font-size: 22px; font-weight: 400; }
     .service-meta span { color: var(--muted); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
@@ -215,6 +221,9 @@
     .story-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 75px 13%; }
     .story-copy h2 { max-width: 420px; }
     .story-copy > p:not(.eyebrow) { max-width: 390px; margin-bottom: 26px; color: #68675f; font-size: 12px; line-height: 1.95; }
+    .founder-signature { display: grid; gap: 0; margin: 0 0 24px; color: var(--olive); }
+    .founder-signature strong { font-family: var(--signature); font-size: 43px; font-weight: 400; line-height: 1; }
+    .founder-signature span { margin-top: 3px; color: var(--muted); font-size: 8px; letter-spacing: .14em; text-transform: uppercase; }
 
     .quote-section { padding: 88px 20px; text-align: center; }
     .quote-mark { margin-bottom: 13px; color: var(--olive); font-family: var(--serif); font-size: 44px; line-height: .8; }
@@ -377,6 +386,30 @@
           <p>Your fabric, your silhouette, your say. We guide the details; you make it personal.</p>
         </article>
       </div>
+      <div class="women-collection">
+        <div class="section-heading">
+          <p class="eyebrow">The women's collection</p>
+          <h2>Sharp lines. Your own style.</h2>
+          <p>Thoughtful tailoring for her, from beautifully cut separates to a suit made just for you.</p>
+        </div>
+        <div class="services">
+          <article class="service-card">
+            <div class="service-image service-image-women-one" role="img" aria-label="A woman wearing a tailored blazer"></div>
+            <div class="service-meta"><h3>The tailored blazer</h3><span>From $795</span></div>
+            <p>An effortless wardrobe staple, shaped to your fit and finished with your choice of details.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-image service-image-women-two" role="img" aria-label="A modern women's tailored outfit"></div>
+            <div class="service-meta"><h3>The modern suit</h3><span>From $1,350</span></div>
+            <p>A confident, considered two-piece with a silhouette made to move with you.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-image service-image-women-three" role="img" aria-label="A woman in an elegant outfit for a special occasion"></div>
+            <div class="service-meta"><h3>Occasion tailoring</h3><span>Made for you</span></div>
+            <p>Personal tailoring for celebrations, big moments, and everything worth dressing up for.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="story" id="story">
@@ -385,6 +418,7 @@
         <p class="eyebrow">A little less, a little better</p>
         <h2>Good tailoring is a conversation.</h2>
         <p>It starts with how you move through your day. Then we listen, take your measurements, and work together to find the right cloth, the right cut, and the small details that make a suit feel like it was always yours.</p>
+        <p class="founder-signature"><strong>Sania</strong><span>Founder &amp; Creative Director</span></p>
         <a class="button button-outline" href="#visit">Get to know our studio</a>
       </div>
     </section>
